@@ -880,7 +880,7 @@ svg {
   transform: translate(-0.25rem);
 }
 
-/* Show Scroll Up */
+
 .show-scroll {
   bottom: 3rem;
 }
@@ -972,19 +972,17 @@ svg {
 @media screen and (min-width: 950px) {
   .container {
     margin-inline: auto;
-    padding-inline: 1rem; /*--- inline----*/
+    padding-inline: 1rem; 
   }
 
   .home__container {
-    /* grid-template-columns: 350px 350px;
-    column-gap: 3rem;
-    padding-block: 2rem 3rem; */
+
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
     column-gap: 2rem;
     padding-block: 2rem;
-    /*display: flex;*/
+
   }
 
   .home__data,
@@ -994,14 +992,14 @@ svg {
   }
 
   .home__blob {
-    /*width: 550px; */
+
     width: 100%;
     max-width: 300px;
   }
 
   .home__content {
     row-gap: 2.5rem;
-    text-align: left; /* align */
+    text-align: left; 
   }
 
   .home__description {
@@ -1048,8 +1046,6 @@ svg {
 
   .contact__form {
     row-gap: 1.5rem;
-    /*align-items: center;
-justify-content: center;*/
   }
   .contact__group {
     grid-template-columns: repeat(2, 1fr);
