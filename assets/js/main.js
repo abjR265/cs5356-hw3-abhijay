@@ -38,6 +38,52 @@ const blurHeader = () =>{
 }
 window.addEventListener('scroll', blurHeader)
 
+
+
+
+/*=============== Brewery API ===============*/
+
+async function fetchBreweries() {
+  let city = document.getElementById("cityInput").value.trim();
+  if (city === "") {
+      alert("Please enter a city name.");
+      return;
+  }
+
+  let url = `https://api.openbrewerydb.org/breweries?by_city=${city}`;
+
+  try {
+      let response = await fetch(url);
+      let data = await response.json();
+      displayBreweries(data);
+  } catch (error) {
+      console.error("Error fetching breweries:", error);
+  }
+}
+
+function displayBreweries(breweries) {
+  let breweryList = document.getElementById("breweryList");
+  breweryList.innerHTML = "";
+
+  if (breweries.length === 0) {
+      breweryList.innerHTML = "<p>No breweries found for this city.</p>";
+      return;
+  }
+
+  breweries.forEach(brewery => {
+      let breweryItem = document.createElement("div");
+      breweryItem.classList.add("brewery-item");
+      breweryItem.innerHTML = `
+          <h4>${brewery.name}</h4>
+          <p>Type: ${brewery.brewery_type}</p>
+          <p>Address: ${brewery.street}, ${brewery.city}, ${brewery.state}</p>
+          <a href="${brewery.website_url}" target="_blank">Visit Website</a>
+      `;
+      breweryList.appendChild(breweryItem);
+  });
+}
+
+
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
       contactMessage = document.getElementById('contact-message')

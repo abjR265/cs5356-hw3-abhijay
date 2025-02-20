@@ -349,14 +349,22 @@ svg {
 /*=============== ABOUT ===============*/
 .about__container {
   row-gap: 2.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .about__data {
   text-align: center;
 }
 
+
+
 .about__description {
   margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .about__image {
@@ -440,6 +448,8 @@ svg {
   text-align: center; 
   width: 100%;
   margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .video__container iframe {
@@ -799,6 +809,97 @@ svg {
   color: var(--title-color);
 }
 
+
+/*=============== Brewery API ===============*/
+.brewery {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.brewery__container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.brewery__container p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.brewery__search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  padding: 12px;
+  font-size: 16px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#cityInput::placeholder {
+  color: #aaa;
+}
+
+.brewery__search button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.brewery-item {
+  background: #222;
+  color: white;
+  padding: 18px;
+  margin: 12px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.brewery-item h4 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin-bottom: 5px;
+}
+
+.brewery-item p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 3px 0;
+}
+
+.brewery-item a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.brewery-item a:hover {
+  text-decoration: underline;
+}
+
+
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--container-color);
@@ -1010,7 +1111,6 @@ svg {
     column-gap: 1.5rem;
   }
 
-  /*img*/
   .home__img {
     display: flex;
     justify-content: center;
