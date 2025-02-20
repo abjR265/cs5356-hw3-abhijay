@@ -106,7 +106,7 @@ const sr =ScrollReveal({
   distance: '60px',
   duration: 2500,
   delay: 400, 
-  // reset: true //
+  
 })
 
 sr.reveal(`.home__data, .home__social, .contact__container, .about__container, .skills__container, .footer__container`)

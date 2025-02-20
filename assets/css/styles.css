@@ -654,3 +654,102 @@ svg {
   }
 }
 
+
+
+
+/*=============== Volunteer Experience ===============*/
+.carousel {
+  position: relative;
+  height: auto;
+  width: 100;
+  max-width: 350px; 
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  width: 70%;
+  height: 200px; 
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+
+.djrobocon-logo,
+.djlit-logo,
+.Igniting-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.volunteer__details {
+  font-size: 14px; 
+  color: var(--first-color); 
+  margin-bottom: 10px; 
+}
+
+.volunteer__duration,
+.volunteer__location {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.volunteer__container {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+
+.volunteer__card {
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  transition: border 0.4s;
+}
+
+.volunteer__description {
+  text-align: left; 
+  margin: 0 auto; 
+  max-width: 500px; 
+}
+
+.volunteer__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.volunteer__card:hover {
+  border: 2px solid var(--first-color);
+}
+
+
