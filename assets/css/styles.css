@@ -376,56 +376,56 @@ svg {
 /*=============== SKILLS ===============*/
 .skills__container {
   display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
-  gap: 40px; /* Adjust spacing between groups */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 40px;
 }
 
 .skills__item {
-  display: flex; /* Enables flexbox on the item container */
-  flex-direction: row; /*------- Arrange items in a row */
-  gap: 10px; /* Adjusts spacing between items */
-  align-items: center; /* Vertically aligns items */
+  display: flex; 
+  flex-direction: row; 
+  gap: 10px; 
+  align-items: center; 
 }
 
 .skills__group .tooltip {
-  position: relative; /* Establishes a positioning context for the tooltip */
-  display: inline-block; /* Ensures the tooltip container wraps around its content */
-  text-align: center; /* -----Center align text */
+  position: relative; 
+  display: inline-block; 
+  text-align: center; 
 }
 
 .skills__group .tooltip img {
   row-gap: 2rem;
-  width: 60px; /* Adjust width as needed */
-  height: 60px; /* Adjust height as needed */
-  object-fit: contain; /* Ensures the image fits within the dimensions without distortion */
+  width: 60px; 
+  height: 60px; 
+  object-fit: contain; 
 }
 
 .skills__group .tooltip .tooltiptext {
-  visibility: hidden; /* Hides the tooltip text by default */
-  width: 100px; /* Adjust width as needed */
-  background-color: hsl(228, 15%, 20%); /* Tooltip background color */
-  color: #fff; /* Tooltip text color */
-  text-align: center; /* Center align the text */
-  border-radius: 5px; /* Rounded corners */
-  padding: 5px; /* Padding around the text */
-  position: absolute; /* Position relative to the tooltip container */
-  z-index: 1; /* Ensure the tooltip is above other content */
-  bottom: 125%; /* Position above the logo */
-  left: 50%; /* Center horizontally */
-  margin-left: -50px; /* Center horizontally by offsetting half the width */
-  opacity: 0; /* Hide the tooltip text initially */
-  transition: opacity 0.3s; /* Smooth transition effect */
+  visibility: hidden; 
+  width: 100px; 
+  background-color: hsl(228, 15%, 20%);
+  color: #fff; 
+  text-align: center;
+  border-radius: 5px; 
+  padding: 5px; 
+  position: absolute; 
+  z-index: 1; 
+  bottom: 125%; 
+  left: 50%; 
+  margin-left: -50px; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
 }
 
 .skills__group .tooltip:hover .tooltiptext {
-  visibility: visible; /* Show tooltip on hover */
-  opacity: 0.9; /* Make tooltip fully opaque */
+  visibility: visible;
+  opacity: 0.9; 
 }
 
 .skills__category {
-  margin-bottom: 15px; /* Space between category title and logos */
-  text-align: center; /* Center align the category title */
+  margin-bottom: 15px; 
+  text-align: center; 
 }
 
 
@@ -448,3 +448,66 @@ svg {
   filter: grayscale(80%) brightness(1.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+/*================EDUCATION=========================*/
+
+.cornell-logo {
+  width: auto; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px; 
+  margin: 0 auto 10px auto;
+}
+
+.djsce-logo {
+  width: 400px; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px; 
+  margin: 0 auto 10px auto;
+}
+
+.education__details {
+  font-size: 14px; 
+  color: var(--first-color); 
+  margin-bottom: 10px; 
+}
+
+.education__duration,
+.education__location {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.education__container {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+
+.education__card {
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  transition: border 0.4s;
+}
+
+.education__description {
+  text-align: left; 
+  margin: 0 auto; 
+  max-width: 500px; 
+
+.education__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.education__card:hover {
+  border: 2px solid var(--first-color);
+}
+
+
