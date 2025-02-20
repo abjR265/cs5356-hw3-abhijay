@@ -445,5 +445,6 @@ svg {
 .video__container iframe {
   max-width: 100%;
   border-radius: 10px;
+  filter: grayscale(80%) brightness(1.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
