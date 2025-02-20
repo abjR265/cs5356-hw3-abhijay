@@ -370,3 +370,80 @@ svg {
 .about__blob path {
   stroke: var(--first-color);
 }
+
+
+
+/*=============== SKILLS ===============*/
+.skills__container {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  gap: 40px; /* Adjust spacing between groups */
+}
+
+.skills__item {
+  display: flex; /* Enables flexbox on the item container */
+  flex-direction: row; /*------- Arrange items in a row */
+  gap: 10px; /* Adjusts spacing between items */
+  align-items: center; /* Vertically aligns items */
+}
+
+.skills__group .tooltip {
+  position: relative; /* Establishes a positioning context for the tooltip */
+  display: inline-block; /* Ensures the tooltip container wraps around its content */
+  text-align: center; /* -----Center align text */
+}
+
+.skills__group .tooltip img {
+  row-gap: 2rem;
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  object-fit: contain; /* Ensures the image fits within the dimensions without distortion */
+}
+
+.skills__group .tooltip .tooltiptext {
+  visibility: hidden; /* Hides the tooltip text by default */
+  width: 100px; /* Adjust width as needed */
+  background-color: hsl(228, 15%, 20%); /* Tooltip background color */
+  color: #fff; /* Tooltip text color */
+  text-align: center; /* Center align the text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Padding around the text */
+  position: absolute; /* Position relative to the tooltip container */
+  z-index: 1; /* Ensure the tooltip is above other content */
+  bottom: 125%; /* Position above the logo */
+  left: 50%; /* Center horizontally */
+  margin-left: -50px; /* Center horizontally by offsetting half the width */
+  opacity: 0; /* Hide the tooltip text initially */
+  transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.skills__group .tooltip:hover .tooltiptext {
+  visibility: visible; /* Show tooltip on hover */
+  opacity: 0.9; /* Make tooltip fully opaque */
+}
+
+.skills__category {
+  margin-bottom: 15px; /* Space between category title and logos */
+  text-align: center; /* Center align the category title */
+}
+
+
+
+
+/*================VIDEO===========================*/
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video__container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
