@@ -753,3 +753,95 @@ svg {
 }
 
 
+
+/*=============== CONTACT ===============*/
+.contact__container {
+  padding-top: 0.2rem;
+}
+
+.contact__form,
+.contact__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact__input::placeholder {
+  color: var(--text-color);
+}
+
+.contact__form textarea {
+  height: 10rem;
+  resize: none;
+  margin-bottom: 0.8rem;
+}
+
+.contact__button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: 3.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--container-color);
+  padding-block: 3.5rem 2rem;
+}
+
+.footer__container {
+  row-gap: 0.5rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.footer__title span {
+  color: var(--first-color);
+}
+
+.footer__education {
+  font-size: var(--normal-font-size);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footer__social-link {
+  display: flex;
+  background-color: var(--first-color-alt);
+  padding: 0.5rem;
+  color: var(--title-color);
+  font-size: 1.5rem;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform 0.4s;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-0.25rem);
+}
+
+
+
